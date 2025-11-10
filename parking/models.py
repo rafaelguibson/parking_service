@@ -7,7 +7,7 @@ class ParkingSpot(models.Model):
     spot_number = models.CharField(
         max_length=10,
         unique=True,
-        verbose_name='Nº da Vaga',
+        verbose_name='Vaga',
     )
 
     is_occupied = models.BooleanField(
@@ -25,8 +25,8 @@ class ParkingSpot(models.Model):
     )
 
     class Meta:
-        verbose_name = 'Numero da Vaga',
-        verbose_name_plural = 'Número das Vagas'
+        verbose_name = 'Vaga',
+        verbose_name_plural = 'Vagas'
 
     def __str__(self):
         return self.spot_number
@@ -64,8 +64,8 @@ class ParkingRecord(models.Model):
     )
 
     class Meta:
-        verbose_name = 'Registro de Vaga',
-        verbose_name_plural = 'Registros de Vagas'
+        verbose_name = 'Registro da Vaga',
+        verbose_name_plural = 'Registro das Vagas'
 
     def __str__(self):
         return f'{self.vehicle} - {self.parking_spot} - {self.entry_time}'
