@@ -6,3 +6,6 @@ class ParkingConfig(AppConfig):
     name = 'parking'
     verbose_name = 'ID da Vaga'
     verbose_name_plural = 'IDs das Vagas'
+
+    def ready(self):
+        import parking.signals
