@@ -27,6 +27,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'rest_framework',
+
     # Apps projeto
     'customer',
     'vehicle',
@@ -129,7 +131,7 @@ JAZZMIN_SETTINGS = {
     "site_brand": "ERP Estacionamento",
 
     # Logo to use for your site, must be present in static files, used for brand on top left
-    #"site_logo": "books/img/logo.png",
+    "site_logo": "books/img/logo.png",
 
     # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
     #"login_logo": None,
